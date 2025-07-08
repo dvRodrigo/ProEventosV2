@@ -1,7 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+
+import { ContatosComponent } from './components/contatos/contatos.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { EventosComponent } from './components/eventos/eventos.component';
+import { PalestrantesComponent } from './components/palestrantes/palestrantes.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+
+const routes: Routes = [
+  {path:'contatos',component: ContatosComponent},
+  {path:'dashboard',component: DashboardComponent},
+  {path:'palestrantes',component: PalestrantesComponent},
+  {path:'perfil',component: PerfilComponent},
+  {path:'eventos',component: EventosComponent},
+
+
+  {path:'', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path:'**', redirectTo: 'dashboard', pathMatch: 'full'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
