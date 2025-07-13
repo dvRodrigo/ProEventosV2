@@ -19,8 +19,29 @@
     "lib": [
       "es2018",
       "dom"
-    ]
-  },
+    ],
+  "paths": {
+    "@app/*": ["src/app/*"],
+    "@environments/*": ["src/environments/*"],
+    "@shared/*": ["src/app/shared/*"],
+    "@core/*": ["src/app/core/*"],
+    "@auth/*": ["src/app/auth/*"],
+    "@services/*": ["src/app/services/*"],
+    "@components/*": ["src/app/components/*"],
+    "@models/*": ["src/app/models/*"],
+    "@directives/*": ["src/app/directives/*"],
+    "@pipes/*": ["src/app/pipes/*"],
+    "@validators/*": ["src/app/validators/*"],
+    "@assets/*": ["src/assets/*"],
+    "@styles/*": ["src/styles/*"],
+    "@enums/*": ["src/app/enums/*"],
+    "@interfaces/*": ["src/app/interfaces/*"],
+    "@guards/*": ["src/app/guards/*"],
+    "@animations/*": ["src/app/animations/*"],
+    "@utils/*": ["src/app/utils/*"],
+    "@config/*": ["src/app/config/*"],
+    "@constants/*": ["src/app/constants/*"],
+  }  },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
